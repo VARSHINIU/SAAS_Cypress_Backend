@@ -1,0 +1,22 @@
+[
+  {
+    "new_password": "123",
+    "old_password": "somu"
+  },
+{
+  "new_password": "1f",
+  "old_password": ""
+},
+{
+  "new_password": "",
+  "old_password": "123"
+},
+{
+  "new_password": "12f",
+  "old_password": "1  23"
+},
+{
+    "new_password": "12  g",
+    "old_password": "123"
+}
+]

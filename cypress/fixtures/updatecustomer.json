@@ -1,0 +1,212 @@
+[
+    {
+        "active_buyer": false,
+        "active_seller": true,
+        "customer_id": 7,        
+        "description": "good",
+        "erp_version": "e12",
+        "local_url": "http://1.18.0.17:9009",
+        "payment_cycle": "monthly",
+        "so_effective_date": "2024-01-01T00:00:00Z",
+        "so_expiry_date": "2024-02-01T00:00:00Z",
+        "subdomain": "mroot",
+        "supplier": "mroot"
+},
+
+{
+        "active_buyer": false,
+        "active_seller": true,
+        "customer_id": 7,               
+        "description": "good",
+        "erp_version": "e12",
+        "local_url": "http://1.168.0.17:9009",
+        "payment_cycle": "monthly",
+        "so_effective_date": "2034-01-01T00:00:00Z",
+        "so_expiry_date": "2023-01-01T00:00:00Z",
+        "subdomain": "mroot",
+        "supplier": "mroot"
+},{
+    
+    "supplier": " ",
+    "customer_id": 7 ,
+    "active_buyer": false,
+        "active_seller": true,
+        "description": "good",
+        "erp_version": "e12",
+        "local_url": "http://1.16l8.0.17:9009",
+        "payment_cycle": "monthly",
+        "so_effective_date": "2034-01-01T00:00:00Z",
+        "so_expiry_date": "2023-01-01T00:00:00Z",
+        "subdomain": "mroot"
+  },
+{
+    
+    "subdomain": " ",
+    "customer_id": 7  ,
+    "supplier": " ",
+    "active_buyer": false,
+        "active_seller": true,
+        "description": "good",
+        "erp_version": "e12",
+        "local_url": "http://1.16l8.0.17:9009",
+        "payment_cycle": "monthly",
+        "so_effective_date": "2034-01-01T00:00:00Z",
+        "so_expiry_date": "2023-01-01T00:00:00Z"
+  },
+{
+    
+    "so_expiry_date": " ",
+    "customer_id": 7 ,
+    "subdomain": " ",
+    "supplier": " ",
+    "active_buyer": false,
+        "active_seller": true,
+        "description": "good",
+        "erp_version": "e12",
+        "local_url": "http://1.16l8.0.17:9009",
+        "payment_cycle": "monthly",
+        "so_effective_date": "2034-01-01T00:00:00Z"
+  },
+{
+    
+    "so_effective_date": " ",
+    "customer_id": 7  ,
+    "so_expiry_date": "2034-01-01T00:00:00Z",
+    "subdomain": "jkl",
+    "supplier": "pk",
+    "active_buyer": false,
+        "active_seller": true,
+        "description": "good",
+        "erp_version": "e12",
+        "local_url": "http://1.168.0.17:9009",
+        "payment_cycle": "monthly"
+  },
+{
+    
+    "payment_cycle": " ",
+    "customer_id": 7  ,
+    "so_effective_date": "2034-01-01T00:00:00Z",
+    "so_expiry_date": "2044-01-01T00:00:00Z",
+    "subdomain": "kkl",
+    "supplier": "llk",
+    "active_buyer": false,
+        "active_seller": true,
+        "description": "good",
+        "erp_version": "e12",
+        "local_url": "http://1.168.0.17:9009"
+  },
+{
+    
+    "local_url": " ",
+    "customer_id": 7 ,
+    "payment_cycle": " ",
+    "so_effective_date": "2034-01-01T00:00:00Z",
+    "so_expiry_date": "2044-01-01T00:00:00Z",
+    "subdomain": "kkl",
+    "supplier": "nkm",
+    "active_buyer": false,
+        "active_seller": true,
+        "description": "good",
+        "erp_version": "e12" 
+  },
+
+{
+    
+    "erp_version": "qwertyuiopsdfghjkl",
+    "customer_id": 7  ,
+    "local_url": "llk",
+    "payment_cycle": "monthlu",
+    "so_effective_date": "2034-01-01T00:00:00Z",
+    "so_expiry_date": "2044-01-01T00:00:00Z",
+    "subdomain": "kjl",
+    "supplier": "jjk",
+    "active_buyer": false,
+        "active_seller": true,
+        "description": "good"
+  },
+  
+  
+  {
+    
+    "supplier": "root",
+    "customer_id": 7  ,
+    "description": "po",
+    "erp_version": "qwer",
+    "local_url": "io",
+    "payment_cycle": "lk",
+    "so_effective_date": "2022-01-01T00:00:00Z",
+    "so_expiry_date": "2023-01-01T00:00:00Z",
+    "subdomain": "dg",
+    "active_buyer": false,
+        "active_seller": true 
+  },
+  {
+    
+    "subdomain": "root",
+    "customer_id": 7 ,
+    "supplier": " ",
+    "active_buyer": false,
+        "active_seller": true,
+        "description": "good",
+        "erp_version": "e12",
+        "local_url": "http://1.168.0.17:9009",
+        "payment_cycle": "monthly",
+        "so_effective_date": "2034-01-01T00:00:00Z",
+        "so_expiry_date": "2023-01-01T00:00:00Z" 
+  },
+  {
+    
+    "subdomain": "rooot",
+    "customer_id": 7 ,
+    "supplier": "po",
+    "active_buyer": false,
+        "active_seller": true,
+        "description": "good",
+        "erp_version": "e12",
+        "local_url": "http://1.168.0.17:9009",
+        "payment_cycle": "monthly",
+        "so_effective_date": "2022T00:00:00Z",
+        "so_expiry_date": "2023-01-01T00:00:00Z" 
+  },
+  {
+    
+    "subdomain": "root",
+    "customer_id": 7 ,
+    "supplier": "po",
+    "active_buyer": false,
+        "active_seller": true,
+        "description": "good",
+        "erp_version": "e12",
+        "local_url": "http://1.168.0.17:9009",
+        "payment_cycle": "monthly",
+        "so_effective_date": "2022-01-01T00:00:00Z",
+        "so_expiry_date": "2023-:00:00Z" 
+  },
+  {
+    
+    "local_url": "http://192.168.0.17:9003459",
+    "customer_id": 9098  ,
+    "payment_cycle": "kj",
+    "so_effective_date": "2022-01-01T00:00:00Z",
+    "so_expiry_date": "2024-01-01T00:00:00Z",
+    "subdomain": "fgh",
+    "supplier": "jkj",
+    "active_buyer": false,
+        "active_seller": true,
+        "description": "good",
+        "erp_version": "e12"
+  },
+  {
+    "active_buyer": false,
+    "active_seller": true,
+    "customer_id": 6,               
+    "description": "good",
+    "erp_version": "e12",
+    "local_url": "http://1.168.0.17:9009",
+    "payment_cycle": "monncccchkthly",
+    "so_effective_date": "2022-01-01T00:00:00Z",
+    "so_expiry_date": "2023-01-01T00:00:00Z",
+    "subdomain": "",
+    "supplier": "mroolt"
+}
+]

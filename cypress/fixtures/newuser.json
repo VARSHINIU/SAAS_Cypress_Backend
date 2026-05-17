@@ -1,0 +1,248 @@
+[                        
+{
+  "email": "varshini.varshini@hotmail.com",
+  "full_name": "*(&^%$#@!~?><=jK1",
+  "password": "*(&^%$#@!~?><_-`+=jK1}",
+  "user_type": "admin",
+  "username": "*(&^%$#nH~?>1",
+  "generateRandomEmail": false,
+  "generateRandomUsername": false,
+  "generateRandomFullName": false
+},
+{
+  "email": "varshiniuu@gmail.com",
+  "full_name": "sri chandran",
+  "password": "sri",
+  "user_type": "normal",
+  "username": "sri",
+  "generateRandomEmail": false,
+  "generateRandomUsername": false,
+  "generateRandomFullName": false
+},
+{
+  "email": "varshini1626.uv@gmail.com",
+  "full_name": "sree chandran",
+  "password": "sree",
+  "user_type": "admin",
+  "username": "sree",
+  "generateRandomEmail": false,
+  "generateRandomUsername": false,
+  "generateRandomFullName": false
+},
+{
+  "email": "ramu@hotmail.com",
+  "full_name": "ramu chandran",
+  "password": "ramu",
+  "user_type": "normal",
+  "username": "ramu",
+  "generateRandomEmail": false,
+  "generateRandomUsername": false,
+  "generateRandomFullName": false
+},
+{
+  "email": "somu@hotmail.com",
+  "full_name": "somu chandran",
+  "password": "somu",
+  "user_type": "admin",
+  "username": "somu",
+  "generateRandomEmail": false,
+  "generateRandomUsername": false,
+  "generateRandomFullName": false
+},
+{
+  "email": "",
+  "full_name": "hello  kity",
+  "password": "1",
+  "user_type": "normal",
+  "username": "hellokitty  ",
+  "generateRandomEmail": true,
+  "generateRandomUsername": false,
+   "generateRandomFullName": false
+},
+{
+   "email": "nm!#*!@gmail.com",
+  "full_name": "",
+  "password": "{hello123",
+  "user_type": "normal",
+  "username": "",
+  "generateRandomEmail": false,
+    "generateRandomUsername": true,
+    "generateRandomFullName": true
+},
+{
+   "email": "varshini.umashankar@crayonte.com",
+  "full_name": "",
+  "password": "hello123",
+  "user_type": "normal",
+  "username": "",
+  "generateRandomEmail": false,
+    "generateRandomUsername": true,
+    "generateRandomFullName": true
+},
+{
+    "email": "",
+   "full_name": "",
+   "password": "hello123",
+   "user_type": "normal",
+   "username": "admin",
+   "generateRandomEmail": true,
+     "generateRandomUsername": false,
+     "generateRandomFullName": true
+ },
+{
+  "email": "",
+  "full_name": "",
+  "password": "{{password}}",
+  "user_type": "normal",
+  "username": "     ",
+  "generateRandomEmail": true,
+    "generateRandomUsername": false,
+    "generateRandomFullName": true
+  
+},
+{
+    "email": "",
+    "full_name": "     ",
+    "password": "{{password}}",
+    "user_type": "normal",
+    "username": "",
+    "generateRandomEmail": true,
+      "generateRandomUsername":true,
+      "generateRandomFullName": false
+    
+  },
+  {
+  "email": "    ",
+  "full_name": "",
+  "password": "{{password}}",
+  "user_type": "normal",
+  "username": "",
+  "generateRandomEmail": false,
+    "generateRandomUsername": true,
+    "generateRandomFullName": true
+  
+},
+{
+    "email": "",
+    "full_name": "",
+    "password": "   ",
+    "user_type": "normal",
+    "username": "",
+    "generateRandomEmail": true,
+      "generateRandomUsername": true,
+      "generateRandomFullName": true
+    
+  },
+  {
+    "email": "",
+    "full_name": "",
+    "password": "{{password}}",
+    "user_type": "     ",
+    "username": "",
+    "generateRandomEmail": true,
+      "generateRandomUsername":true,
+      "generateRandomFullName": true
+    
+  },
+{
+  "email": "",
+  "full_name": "",
+  "password": "{{password}}",
+  "user_type": "normal",
+  "username": "",
+   "generateRandomEmail": false,
+     "generateRandomUsername": true,
+     "generateRandomFullName": true
+},
+{
+    "email": "",
+    "full_name": " hjhv",
+    "password": "hello123",
+    "user_type": "normal",
+    "username": "",
+    "generateRandomEmail": true,
+    "generateRandomUsername": false,
+    "generateRandomFullName": true
+  },
+  {
+    "email": "",
+    "full_name": "",
+    "password": "heloo123",
+    "user_type": "normal",
+    "username": "ioh vjh",
+    "generateRandomEmail": true,
+    "generateRandomUsername": true,
+    "generateRandomFullName": false
+  },
+{
+  "email": "",
+  "full_name": " hjhv",
+  "password": "",
+  "user_type": "normal",
+  "username": "ioh vjh",
+  "generateRandomEmail": true,
+  "generateRandomUsername": false,
+  "generateRandomFullName": false
+},
+{
+    "email": " ",
+    "full_name": "",
+    "password": "{{password}}",
+    "user_type": "",
+    "username": "",
+    "generateRandomEmail":true,
+    "generateRandomUsername": true,
+    "generateRandomFullName": true
+  },
+  {
+    "email": "",
+    "full_name": " hj hv",
+    "password": "12345",
+    "user_type": "normal",
+    "username": "",
+    "generateRandomEmail": true,
+    "generateRandomUsername": true,
+    "generateRandomFullName": false
+  },
+  {
+    "email": "asdfh sdfg@gmail.com",
+    "full_name": "",
+    "password": "12345",
+    "user_type": "admin",
+    "username": "",
+    "generateRandomEmail": false,
+    "generateRandomUsername":true,
+    "generateRandomFullName": true
+  },
+  {
+    "email": "",
+    "full_name": "",
+    "password": "12345",
+    "user_type": "admin",
+    "username": "ioh  jh",
+    "generateRandomEmail": true,
+    "generateRandomUsername": false,
+    "generateRandomFullName": true
+  },
+  {
+    "email": "",
+    "full_name": "",
+    "password": "123 45",
+    "user_type": "admin",
+    "username": "",
+    "generateRandomEmail":true,
+    "generateRandomUsername": true,
+    "generateRandomFullName": true
+  },
+  {
+    "email": "",
+    "full_name": "",
+    "password": "12345",
+    "user_type": "a  dm in",
+    "username": "",
+    "generateRandomEmail": true,
+    "generateRandomUsername": true,
+    "generateRandomFullName": true
+  }
+
+]

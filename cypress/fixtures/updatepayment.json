@@ -1,0 +1,65 @@
+[
+    {
+        "customer_id": 2,
+        "description": "dummy",
+        "due_date": "2025-06-01T05:29:59+05:30",
+        "milestone_id": 6,
+        "payment_status": "paid",
+        "subscription_id": 2
+      },{
+        "customer_id": 2,
+        "description": "",
+        "due_date": "2023-05-01T05:29:59+05:30",
+        "milestone_id": 6,
+        "payment_status": "paid",
+        "subscription_id": 2
+      },
+      {
+        "customer_id": 100000,
+        "description": "stri",
+        "due_date": "2023-05-01T05:29:59+05:30",
+        "milestone_id": 1,
+        "payment_status": "unpaid",
+        "subscription_id": 2
+      },
+      {
+        "customer_id": 2,
+        "description": "stri",
+        "due_date": "2023-05-01T05:29:59+05:30",
+        "milestone_id": 10000000,
+        "payment_status": "unpaid",
+        "subscription_id": 2
+      },
+      {
+        "customer_id": 2,
+        "description": "stri",
+        "due_date": "2023-05-01T05:29:59+05:30",
+        "milestone_id": 1,
+        "payment_status": "unpaid",
+        "subscription_id": 20000000
+      },
+      {
+        "customer_id": 1,
+        "description": "stri",
+        "due_date": "2023-05-01T05:29:59+05:30",
+        "milestone_id": 6,
+        "payment_status": "hello",
+        "subscription_id": 2
+      },
+      {
+        "customer_id": 2,
+        "description": "stri",
+        "due_date": "2023-05-01T05:29:59+05:30",
+        "milestone_id": 6,
+        "payment_status": "",
+        "subscription_id": 2
+      },
+      {
+        "customer_id": 1,
+        "description": "stri",
+        "due_date": "2023-05-0",
+        "milestone_id": 6,
+        "payment_status": "paid",
+        "subscription_id": 2
+      }
+]

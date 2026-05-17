@@ -1,0 +1,120 @@
+[
+  
+{
+    "customer_id": 2,
+    "description": "string",
+    "end_date": "2023-12-31T23:59:59Z",
+    "entities": 2,
+    "license_type": "string",
+    "start_date": "2023-03-31T23:59:59Z",
+    "user_license": 2
+  },
+  {
+    "customer_id": 100,
+    "description": "string",
+    "end_date": "2023-12-31T23:59:59Z",
+    "entities": 2,
+    "license_type": "string",
+    "start_date": "2023-03-31T23:59:59Z",
+    "user_license": 2
+  },
+  {
+    "customer_id": 2,
+    "description": " ",
+    "end_date": "2023-12-31T23:59:59Z",
+    "entities": 2,
+    "license_type": "license",
+    "start_date": "2023-03-31T23:59:59Z",
+    "user_license": 2
+  },
+  {
+    "customer_id": 2,
+    "description": "desc",
+    "end_date": "2023-12-31T23:59:59Z",
+    "entities": 2,
+    "license_type": " ",
+    "start_date": "2022-03-31T23:59:59Z",
+    "user_license": 2
+  },
+  {
+    "customer_id": 2,
+    "description": "sdfg",
+    "end_date": " ",
+    "entities": 2,
+    "license_type": "sdfgh",
+    "start_date": "2023-03-31T23:59:59Z",
+    "user_license": 2
+  },
+  {
+    "customer_id": 2,
+    "description": "sdfg",
+    "end_date": "2023-12-15T23:59:59Z",
+    "entities": 2,
+    "license_type": "oiuyt",
+    "start_date": " ",
+    "user_license": 2
+  },
+  {
+    "customer_id": 2,
+    "description": "~!@#2345$%^&*",
+    "end_date": "2023-12-31T23:59:59Z",
+    "entities": 2,
+    "license_type": "~!@#$%^&",
+    "start_date": "2023-03-31T23:59:59Z",
+    "user_license": 2
+  },
+  {
+    "customer_id": 2,
+    "description": "~!@#$%^&*",
+    "end_date": "2023-31T23:59:59Z",
+    "entities": 2,
+    "license_type": "~!@#$%^&",
+    "start_date": "2023-0",
+    "user_license": 2
+  },
+  {
+    "customer_id": 2,
+    "description": "~!@#$%^&*",
+    "end_date": "20239:59Z",
+    "entities": 2,
+    "license_type": "~!@#$%^&",
+    "start_date": "2023-31T23:59:59Z",
+    "user_license": 2
+  },
+  {
+    "customer_id": 2,
+    "description": "~$%^9 87*",
+    "end_date": "2023-12-31T23:59:59Z",
+    "entities": -9,
+    "license_type": "~!@#  $%^&",
+    "start_date": "2023-03-31T23:59:59Z",
+    "user_license":-2
+  },
+  {
+    "customer_id": 2,
+    "description": "",
+    "end_date": "2023-12-31T23:59:59Z",
+    "entities": -9,
+    "license_type": "",
+    "start_date": "2023-03-31T23:59:59Z",
+    "user_license":-2
+  },
+  {
+    "customer_id": 2,
+    "description": "sdfg",
+    "end_date": "2023-12-15T23:59:59Z",
+    "entities": 2,
+    "license_type": "oiuyt",
+    "start_date": "2022-03-31T23:59:59Z",
+    "user_license": 2
+  },
+  {
+    "customer_id": 2,
+    "description": "sdfg",
+    "end_date": "2025-12-15T23:59:59Z",
+    "entities": 2,
+    "license_type": "oiuyt",
+    "start_date": "2023-03-31T23:59:59Z",
+    "user_license": 2
+  }
+]

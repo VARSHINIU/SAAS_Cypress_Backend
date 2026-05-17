@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-12-02T13:00:46.714Z",
+    "end": "2024-12-02T13:00:47.822Z",
+    "duration": 1108,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f26d80bd-e260-406f-9099-0c9cafddd05b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\saas controller\\Login.cy.js",
+      "file": "cypress\\e2e\\saas controller\\Login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8f64f04e-fb7a-4ee5-af91-ec3eda8c4d59",
+          "title": "LOGIN API (AUTHENTICATION)",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login validation - Test Case 1",
+              "fullTitle": "LOGIN API (AUTHENTICATION) Login validation - Test Case 1",
+              "timedOut": null,
+              "duration": 610,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('url.json').then(data => {\n  cy.request({\n    method: \"POST\",\n    url: data.login,\n    body: inputData,\n    failOnStatusCode: false\n  }).then(response => {\n    if (inputData.password && inputData.username) {\n      if (inputData.password === \"12345\" && inputData.username === \"admin\") {\n        cy.log(`Valid credentials: ${JSON.stringify(inputData)}`);\n        console.log(response.body);\n        expect(response.status).to.equal(200);\n        const schema = {\n          \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n          \"title\": \"Generated schema for Root\",\n          \"type\": \"object\",\n          \"properties\": {\n            \"id\": {\n              \"type\": \"number\"\n            },\n            \"token\": {\n              \"type\": \"string\"\n            },\n            \"full_name\": {\n              \"type\": \"string\"\n            },\n            \"username\": {\n              \"type\": \"string\"\n            },\n            \"user_type\": {\n              \"type\": \"string\"\n            },\n            \"email\": {\n              \"type\": \"string\"\n            }\n          },\n          \"required\": [\"id\", \"token\", \"full_name\", \"username\", \"user_type\", \"email\"],\n          \"additionalProperties\": false\n        };\n        const validate = ajv.compile(schema);\n        const isValid = validate(response.body);\n        expect(isValid).to.be.true;\n        readUsersFromDB().then(result => {\n          const allUsers = result.rows;\n          const user = allUsers.find(row => row.username === response.body.username);\n          if (user) {\n            console.log(\"***verified user existed in Database\");\n          } else {\n            console.log(\"***user not found\");\n          }\n        });\n        expect(response.body.id).to.be.at.least(1);\n        expect(response.body.token).to.have.lengthOf.at.least(1);\n        expect(response.body.email).to.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/);\n        expect(response.body.email).to.have.lengthOf.at.least(7);\n        expect(response.body.full_name).to.have.lengthOf.at.least(1);\n        expect(response.body.username).to.have.lengthOf.at.least(1);\n        expect(response.body.user_type).to.be.oneOf([\"admin\", \"normal\"]);\n        expect(response.headers['content-type']).to.include(\"application/json\");\n      } else {\n        expect(response.status).to.equal(401);\n        cy.log(`Invalid credentials - Status: ${response.status}, Body: ${JSON.stringify(response.body)}, Input: ${JSON.stringify(inputData)}`);\n        console.log(response.body);\n        expect(response.body).to.equal(\"Invalid credentials\");\n      }\n    } else {\n      expect(response.status).to.equal(400);\n      cy.log(`Invalid payload - Status: ${response.status}, Body: ${JSON.stringify(response.body)}, Input: ${JSON.stringify(inputData)}`);\n      console.log(response.body);\n      expect(response.body).to.equal(\"Fill all the required fields\");\n    }\n  });\n});",
+              "err": {},
+              "uuid": "a0393a40-ab77-4744-83df-06b178c033aa",
+              "parentUUID": "8f64f04e-fb7a-4ee5-af91-ec3eda8c4d59",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login validation - Test Case 2",
+              "fullTitle": "LOGIN API (AUTHENTICATION) Login validation - Test Case 2",
+              "timedOut": null,
+              "duration": 161,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('url.json').then(data => {\n  cy.request({\n    method: \"POST\",\n    url: data.login,\n    body: inputData,\n    failOnStatusCode: false\n  }).then(response => {\n    if (inputData.password && inputData.username) {\n      if (inputData.password === \"12345\" && inputData.username === \"admin\") {\n        cy.log(`Valid credentials: ${JSON.stringify(inputData)}`);\n        console.log(response.body);\n        expect(response.status).to.equal(200);\n        const schema = {\n          \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n          \"title\": \"Generated schema for Root\",\n          \"type\": \"object\",\n          \"properties\": {\n            \"id\": {\n              \"type\": \"number\"\n            },\n            \"token\": {\n              \"type\": \"string\"\n            },\n            \"full_name\": {\n              \"type\": \"string\"\n            },\n            \"username\": {\n              \"type\": \"string\"\n            },\n            \"user_type\": {\n              \"type\": \"string\"\n            },\n            \"email\": {\n              \"type\": \"string\"\n            }\n          },\n          \"required\": [\"id\", \"token\", \"full_name\", \"username\", \"user_type\", \"email\"],\n          \"additionalProperties\": false\n        };\n        const validate = ajv.compile(schema);\n        const isValid = validate(response.body);\n        expect(isValid).to.be.true;\n        readUsersFromDB().then(result => {\n          const allUsers = result.rows;\n          const user = allUsers.find(row => row.username === response.body.username);\n          if (user) {\n            console.log(\"***verified user existed in Database\");\n          } else {\n            console.log(\"***user not found\");\n          }\n        });\n        expect(response.body.id).to.be.at.least(1);\n        expect(response.body.token).to.have.lengthOf.at.least(1);\n        expect(response.body.email).to.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/);\n        expect(response.body.email).to.have.lengthOf.at.least(7);\n        expect(response.body.full_name).to.have.lengthOf.at.least(1);\n        expect(response.body.username).to.have.lengthOf.at.least(1);\n        expect(response.body.user_type).to.be.oneOf([\"admin\", \"normal\"]);\n        expect(response.headers['content-type']).to.include(\"application/json\");\n      } else {\n        expect(response.status).to.equal(401);\n        cy.log(`Invalid credentials - Status: ${response.status}, Body: ${JSON.stringify(response.body)}, Input: ${JSON.stringify(inputData)}`);\n        console.log(response.body);\n        expect(response.body).to.equal(\"Invalid credentials\");\n      }\n    } else {\n      expect(response.status).to.equal(400);\n      cy.log(`Invalid payload - Status: ${response.status}, Body: ${JSON.stringify(response.body)}, Input: ${JSON.stringify(inputData)}`);\n      console.log(response.body);\n      expect(response.body).to.equal(\"Fill all the required fields\");\n    }\n  });\n});",
+              "err": {},
+              "uuid": "20a7c3a5-a9e4-4020-9c1d-cefd21693998",
+              "parentUUID": "8f64f04e-fb7a-4ee5-af91-ec3eda8c4d59",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login validation - Test Case 3",
+              "fullTitle": "LOGIN API (AUTHENTICATION) Login validation - Test Case 3",
+              "timedOut": null,
+              "duration": 39,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('url.json').then(data => {\n  cy.request({\n    method: \"POST\",\n    url: data.login,\n    body: inputData,\n    failOnStatusCode: false\n  }).then(response => {\n    if (inputData.password && inputData.username) {\n      if (inputData.password === \"12345\" && inputData.username === \"admin\") {\n        cy.log(`Valid credentials: ${JSON.stringify(inputData)}`);\n        console.log(response.body);\n        expect(response.status).to.equal(200);\n        const schema = {\n          \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n          \"title\": \"Generated schema for Root\",\n          \"type\": \"object\",\n          \"properties\": {\n            \"id\": {\n              \"type\": \"number\"\n            },\n            \"token\": {\n              \"type\": \"string\"\n            },\n            \"full_name\": {\n              \"type\": \"string\"\n            },\n            \"username\": {\n              \"type\": \"string\"\n            },\n            \"user_type\": {\n              \"type\": \"string\"\n            },\n            \"email\": {\n              \"type\": \"string\"\n            }\n          },\n          \"required\": [\"id\", \"token\", \"full_name\", \"username\", \"user_type\", \"email\"],\n          \"additionalProperties\": false\n        };\n        const validate = ajv.compile(schema);\n        const isValid = validate(response.body);\n        expect(isValid).to.be.true;\n        readUsersFromDB().then(result => {\n          const allUsers = result.rows;\n          const user = allUsers.find(row => row.username === response.body.username);\n          if (user) {\n            console.log(\"***verified user existed in Database\");\n          } else {\n            console.log(\"***user not found\");\n          }\n        });\n        expect(response.body.id).to.be.at.least(1);\n        expect(response.body.token).to.have.lengthOf.at.least(1);\n        expect(response.body.email).to.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/);\n        expect(response.body.email).to.have.lengthOf.at.least(7);\n        expect(response.body.full_name).to.have.lengthOf.at.least(1);\n        expect(response.body.username).to.have.lengthOf.at.least(1);\n        expect(response.body.user_type).to.be.oneOf([\"admin\", \"normal\"]);\n        expect(response.headers['content-type']).to.include(\"application/json\");\n      } else {\n        expect(response.status).to.equal(401);\n        cy.log(`Invalid credentials - Status: ${response.status}, Body: ${JSON.stringify(response.body)}, Input: ${JSON.stringify(inputData)}`);\n        console.log(response.body);\n        expect(response.body).to.equal(\"Invalid credentials\");\n      }\n    } else {\n      expect(response.status).to.equal(400);\n      cy.log(`Invalid payload - Status: ${response.status}, Body: ${JSON.stringify(response.body)}, Input: ${JSON.stringify(inputData)}`);\n      console.log(response.body);\n      expect(response.body).to.equal(\"Fill all the required fields\");\n    }\n  });\n});",
+              "err": {},
+              "uuid": "6fa6252e-c6de-4e3a-98b0-ca32eea42b4b",
+              "parentUUID": "8f64f04e-fb7a-4ee5-af91-ec3eda8c4d59",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login validation - Test Case 4",
+              "fullTitle": "LOGIN API (AUTHENTICATION) Login validation - Test Case 4",
+              "timedOut": null,
+              "duration": 40,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('url.json').then(data => {\n  cy.request({\n    method: \"POST\",\n    url: data.login,\n    body: inputData,\n    failOnStatusCode: false\n  }).then(response => {\n    if (inputData.password && inputData.username) {\n      if (inputData.password === \"12345\" && inputData.username === \"admin\") {\n        cy.log(`Valid credentials: ${JSON.stringify(inputData)}`);\n        console.log(response.body);\n        expect(response.status).to.equal(200);\n        const schema = {\n          \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n          \"title\": \"Generated schema for Root\",\n          \"type\": \"object\",\n          \"properties\": {\n            \"id\": {\n              \"type\": \"number\"\n            },\n            \"token\": {\n              \"type\": \"string\"\n            },\n            \"full_name\": {\n              \"type\": \"string\"\n            },\n            \"username\": {\n              \"type\": \"string\"\n            },\n            \"user_type\": {\n              \"type\": \"string\"\n            },\n            \"email\": {\n              \"type\": \"string\"\n            }\n          },\n          \"required\": [\"id\", \"token\", \"full_name\", \"username\", \"user_type\", \"email\"],\n          \"additionalProperties\": false\n        };\n        const validate = ajv.compile(schema);\n        const isValid = validate(response.body);\n        expect(isValid).to.be.true;\n        readUsersFromDB().then(result => {\n          const allUsers = result.rows;\n          const user = allUsers.find(row => row.username === response.body.username);\n          if (user) {\n            console.log(\"***verified user existed in Database\");\n          } else {\n            console.log(\"***user not found\");\n          }\n        });\n        expect(response.body.id).to.be.at.least(1);\n        expect(response.body.token).to.have.lengthOf.at.least(1);\n        expect(response.body.email).to.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/);\n        expect(response.body.email).to.have.lengthOf.at.least(7);\n        expect(response.body.full_name).to.have.lengthOf.at.least(1);\n        expect(response.body.username).to.have.lengthOf.at.least(1);\n        expect(response.body.user_type).to.be.oneOf([\"admin\", \"normal\"]);\n        expect(response.headers['content-type']).to.include(\"application/json\");\n      } else {\n        expect(response.status).to.equal(401);\n        cy.log(`Invalid credentials - Status: ${response.status}, Body: ${JSON.stringify(response.body)}, Input: ${JSON.stringify(inputData)}`);\n        console.log(response.body);\n        expect(response.body).to.equal(\"Invalid credentials\");\n      }\n    } else {\n      expect(response.status).to.equal(400);\n      cy.log(`Invalid payload - Status: ${response.status}, Body: ${JSON.stringify(response.body)}, Input: ${JSON.stringify(inputData)}`);\n      console.log(response.body);\n      expect(response.body).to.equal(\"Fill all the required fields\");\n    }\n  });\n});",
+              "err": {},
+              "uuid": "036910ba-79a3-4556-b282-d1186d6de188",
+              "parentUUID": "8f64f04e-fb7a-4ee5-af91-ec3eda8c4d59",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login validation - Test Case 5",
+              "fullTitle": "LOGIN API (AUTHENTICATION) Login validation - Test Case 5",
+              "timedOut": null,
+              "duration": 34,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('url.json').then(data => {\n  cy.request({\n    method: \"POST\",\n    url: data.login,\n    body: inputData,\n    failOnStatusCode: false\n  }).then(response => {\n    if (inputData.password && inputData.username) {\n      if (inputData.password === \"12345\" && inputData.username === \"admin\") {\n        cy.log(`Valid credentials: ${JSON.stringify(inputData)}`);\n        console.log(response.body);\n        expect(response.status).to.equal(200);\n        const schema = {\n          \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n          \"title\": \"Generated schema for Root\",\n          \"type\": \"object\",\n          \"properties\": {\n            \"id\": {\n              \"type\": \"number\"\n            },\n            \"token\": {\n              \"type\": \"string\"\n            },\n            \"full_name\": {\n              \"type\": \"string\"\n            },\n            \"username\": {\n              \"type\": \"string\"\n            },\n            \"user_type\": {\n              \"type\": \"string\"\n            },\n            \"email\": {\n              \"type\": \"string\"\n            }\n          },\n          \"required\": [\"id\", \"token\", \"full_name\", \"username\", \"user_type\", \"email\"],\n          \"additionalProperties\": false\n        };\n        const validate = ajv.compile(schema);\n        const isValid = validate(response.body);\n        expect(isValid).to.be.true;\n        readUsersFromDB().then(result => {\n          const allUsers = result.rows;\n          const user = allUsers.find(row => row.username === response.body.username);\n          if (user) {\n            console.log(\"***verified user existed in Database\");\n          } else {\n            console.log(\"***user not found\");\n          }\n        });\n        expect(response.body.id).to.be.at.least(1);\n        expect(response.body.token).to.have.lengthOf.at.least(1);\n        expect(response.body.email).to.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/);\n        expect(response.body.email).to.have.lengthOf.at.least(7);\n        expect(response.body.full_name).to.have.lengthOf.at.least(1);\n        expect(response.body.username).to.have.lengthOf.at.least(1);\n        expect(response.body.user_type).to.be.oneOf([\"admin\", \"normal\"]);\n        expect(response.headers['content-type']).to.include(\"application/json\");\n      } else {\n        expect(response.status).to.equal(401);\n        cy.log(`Invalid credentials - Status: ${response.status}, Body: ${JSON.stringify(response.body)}, Input: ${JSON.stringify(inputData)}`);\n        console.log(response.body);\n        expect(response.body).to.equal(\"Invalid credentials\");\n      }\n    } else {\n      expect(response.status).to.equal(400);\n      cy.log(`Invalid payload - Status: ${response.status}, Body: ${JSON.stringify(response.body)}, Input: ${JSON.stringify(inputData)}`);\n      console.log(response.body);\n      expect(response.body).to.equal(\"Fill all the required fields\");\n    }\n  });\n});",
+              "err": {},
+              "uuid": "6dcf8996-bdb1-4cd7-a27e-547546f415c4",
+              "parentUUID": "8f64f04e-fb7a-4ee5-af91-ec3eda8c4d59",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login validation - Test Case 6",
+              "fullTitle": "LOGIN API (AUTHENTICATION) Login validation - Test Case 6",
+              "timedOut": null,
+              "duration": 37,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('url.json').then(data => {\n  cy.request({\n    method: \"POST\",\n    url: data.login,\n    body: inputData,\n    failOnStatusCode: false\n  }).then(response => {\n    if (inputData.password && inputData.username) {\n      if (inputData.password === \"12345\" && inputData.username === \"admin\") {\n        cy.log(`Valid credentials: ${JSON.stringify(inputData)}`);\n        console.log(response.body);\n        expect(response.status).to.equal(200);\n        const schema = {\n          \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n          \"title\": \"Generated schema for Root\",\n          \"type\": \"object\",\n          \"properties\": {\n            \"id\": {\n              \"type\": \"number\"\n            },\n            \"token\": {\n              \"type\": \"string\"\n            },\n            \"full_name\": {\n              \"type\": \"string\"\n            },\n            \"username\": {\n              \"type\": \"string\"\n            },\n            \"user_type\": {\n              \"type\": \"string\"\n            },\n            \"email\": {\n              \"type\": \"string\"\n            }\n          },\n          \"required\": [\"id\", \"token\", \"full_name\", \"username\", \"user_type\", \"email\"],\n          \"additionalProperties\": false\n        };\n        const validate = ajv.compile(schema);\n        const isValid = validate(response.body);\n        expect(isValid).to.be.true;\n        readUsersFromDB().then(result => {\n          const allUsers = result.rows;\n          const user = allUsers.find(row => row.username === response.body.username);\n          if (user) {\n            console.log(\"***verified user existed in Database\");\n          } else {\n            console.log(\"***user not found\");\n          }\n        });\n        expect(response.body.id).to.be.at.least(1);\n        expect(response.body.token).to.have.lengthOf.at.least(1);\n        expect(response.body.email).to.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/);\n        expect(response.body.email).to.have.lengthOf.at.least(7);\n        expect(response.body.full_name).to.have.lengthOf.at.least(1);\n        expect(response.body.username).to.have.lengthOf.at.least(1);\n        expect(response.body.user_type).to.be.oneOf([\"admin\", \"normal\"]);\n        expect(response.headers['content-type']).to.include(\"application/json\");\n      } else {\n        expect(response.status).to.equal(401);\n        cy.log(`Invalid credentials - Status: ${response.status}, Body: ${JSON.stringify(response.body)}, Input: ${JSON.stringify(inputData)}`);\n        console.log(response.body);\n        expect(response.body).to.equal(\"Invalid credentials\");\n      }\n    } else {\n      expect(response.status).to.equal(400);\n      cy.log(`Invalid payload - Status: ${response.status}, Body: ${JSON.stringify(response.body)}, Input: ${JSON.stringify(inputData)}`);\n      console.log(response.body);\n      expect(response.body).to.equal(\"Fill all the required fields\");\n    }\n  });\n});",
+              "err": {},
+              "uuid": "63b907a2-9103-4f39-9b95-07fe23ee40ba",
+              "parentUUID": "8f64f04e-fb7a-4ee5-af91-ec3eda8c4d59",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a0393a40-ab77-4744-83df-06b178c033aa",
+            "20a7c3a5-a9e4-4020-9c1d-cefd21693998",
+            "6fa6252e-c6de-4e3a-98b0-ca32eea42b4b",
+            "036910ba-79a3-4556-b282-d1186d6de188",
+            "6dcf8996-bdb1-4cd7-a27e-547546f415c4",
+            "63b907a2-9103-4f39-9b95-07fe23ee40ba"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 921,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+[
+{
+    "customer_id": 2,
+    "description": "string",
+    "due_date": "2023-01-01T00:00:00Z",
+    "payment_status": "paid",
+    "subscription_id": 2
+  },
+  {
+    "customer_id": 1000000,
+    "description": "string",
+    "due_date": "2023-01-01T00:00:00Z",
+    "payment_status": "paid",
+    "subscription_id": 2
+  },
+  {
+    "customer_id": 2,
+    "description": "string",
+    "due_date": "2023-01-01T00:00:00Z",
+    "payment_status": "paid",
+    "subscription_id": 2000000
+  },
+  {
+    "customer_id": 2,
+    "description": "string",
+    "due_date": "2023-01-01T00:00:00Z",
+    "payment_status": "iknbv",
+    "subscription_id": 2
+  },
+  {
+    "customer_id": 2,
+    "description": "oiuy",
+    "due_date": "2023-01-01T00:00:00Z",
+    "payment_status": " ",
+    "subscription_id": 2
+  },
+  {
+    "customer_id": 2,
+    "description": "oiuy",
+    "due_date": "2023-01-01T00:00:00Z",
+    "payment_status": "",
+    "subscription_id": 2
+  },
+  {
+    "customer_id": 2,
+    "description": "dfg",
+    "due_date": "2023-0:00Z",
+    "payment_status": "paid",
+    "subscription_id": 2
+  }
+]

@@ -1,0 +1,62 @@
+[
+{
+  "email": "",
+  "id": 10,
+  "full_name":"good name",
+  "user_type": "admin",
+  "generateRandomEmail":true
+},
+{
+  "email": "23456",
+   "id": 10,
+   "full_name":"good name",
+   "user_type": "normal"   
+ },
+ {
+  "email": "",
+   "id": 10,
+   "user_type": "nl" ,
+   "full_name":"good name",
+   "generateRandomEmail":true
+ },
+ 
+ {
+  "email": "",
+   "id": 3000,
+   "user_type": "normal",
+   "full_name":"good name",
+   "generateRandomEmail":true   
+ },
+ {
+   "email": "varshini.umashankar@crayonte.com",
+    "id": 10,
+    "user_type": "normal"   
+ } ,
+ {
+     "email": "",
+     "id": 10,
+     "user_type": " ",
+     "generateRandomEmail":true  
+ } ,
+ {
+   "email": "",
+   "id": 10,
+   "user_type": "admin",
+   "full_name":" ",
+   "generateRandomEmail":true  
+ } ,
+ {
+     "email": "",
+     "id": 10,
+     "user_type": "norma  l",
+     "full_name":" ",
+     "generateRandomEmail":true  
+ },
+ {
+     "email": "sdfghj   @gmail.com",
+     "id": 10,
+     "user_type": "normal",
+     "generateRandomEmail":false 
+ }
+ 
+]

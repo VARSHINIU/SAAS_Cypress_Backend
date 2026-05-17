@@ -1,0 +1,156 @@
+[
+{
+    "customer_id": 2,
+    "description": "test",
+    "end_date": "2024-11-24T23:59:59Z",
+    "entities": -4,
+    "license_type": "utype",
+    "start_date": "2024-03-31T23:59:59Z",
+    "subscription_id": 2,
+    "user_license": 0   
+},
+{
+    "customer_id": 2,
+    "description": "true",
+    "end_date": "2024-04-30T23:59:59Z",
+    "entities": -4,
+    "license_type": "utype",
+    "start_date": "2023-03",
+    "subscription_id": 2,
+    "user_license": 0   
+},
+{
+    "customer_id": 2,
+    "description": "demo",
+    "end_date": "2023-04",
+    "entities": -4,
+    "license_type": true,
+    "start_date": "2024-03-31T23:59:59Z",
+    "subscription_id": 2,
+    "user_license": 0   
+},
+
+{
+    "customer_id": 2,
+    "description": "string",
+    "end_date": "2024-04-30T23:59:59Z",
+    "entities": -4,
+    "license_type": "utype",
+    "start_date": "2024-01-01T00:00:00Z",
+    "subscription_id": 2,
+    "user_license": 0   
+},
+{
+    "customer_id": 2,
+    "description": "string",
+    "end_date": "2024-11-24T23:59:59Z",
+    "entities": -4,
+    "license_type": "utype",
+    "start_date": "2023-01-01T00:00:00Z",
+    "subscription_id": 2,
+    "user_license": 0   
+},
+{
+  "customer_id": 2,
+  "description": "string",
+  "end_date": "2024-11-01T00:00:00Z",
+  "entities": -4,
+  "license_type": "utype",
+  "start_date": "2024-03-31T23:59:59Z",
+  "subscription_id": 2,
+  "user_license": 0
+}
+,
+{
+    "customer_id": 2,
+    "description": "string",
+    "end_date": "2025-11-01T00:00:00Z",
+    "entities": -4,
+    "license_type": "utype",
+    "start_date": "2024-03-31T23:59:59Z",
+    "subscription_id": 2,
+    "user_license": 0
+  }
+  ,
+{
+    "customer_id": 2,
+    "description": "true",
+    "end_date": "2024-02-23T23:59:59Z",
+    "entities": 0,
+    "license_type": "utype",
+    "start_date": "2024-03-31T23:59:59Z",
+    "subscription_id": 3,
+    "user_license": 0
+  },
+  {
+    "customer_id": 2,
+    "description": true,
+    "end_date": "2024-02-23T23:59:59Z",
+    "entities": 0,
+    "license_type": "utype",
+    "start_date": "2024-01-31T23:59:59Z",
+    "subscription_id": 3,
+    "user_license": 0
+  },
+  {
+    "customer_id": 2,
+    "description": "string",
+    "end_date": "2024-11-23T23:59:59Z",
+    "entities": -4,
+    "license_type":true,
+    "start_date": "2024-03-31T23:59:59Z",
+    "subscription_id": 2,
+    "user_license": 0
+  },
+  {
+    "customer_id": 200,
+    "description": "string",
+    "end_date": "2024-11-23T23:59:59Z",
+    "entities": -4,
+    "license_type": "utype",
+    "start_date": "2024-03-31T23:59:59Z",
+    "subscription_id": 2,
+    "user_license": 0
+  },
+  {
+    "customer_id": 2,
+    "description": "string",
+    "end_date": "2024-11-23T23:59:59Z",
+    "entities": -4,
+    "license_type": "utype",
+    "start_date": "2024-03-31T23:59:59Z",
+    "subscription_id": 200,
+    "user_license": 0
+  },
+  {
+    "customer_id": 2,
+    "description": " ",
+    "end_date": "2024-09-23T23:59:59Z",
+    "entities": -4,
+    "license_type": "utype",
+    "start_date": "2024-03-31T23:59:59Z",
+    "subscription_id": 2,
+    "user_license": 0
+  },
+  {
+    "customer_id": 2,
+    "description": " ",
+    "end_date": "2024-02-24T23:59:59Z",
+    "entities": -4,
+    "license_type": "utype",
+    "start_date": "2024-03-31T23:59:59Z",
+    "subscription_id": 2,
+    "user_license": 0
+  },
+  {
+    "customer_id": 2,
+    "description": "string",
+    "end_date": "2024-06-23T23:59:59Z",
+    "entities": -4,
+    "license_type": " ",
+    "start_date": "2024-03-31T23:59:59Z",
+    "subscription_id": 2,
+    "user_license": 0
+  }
+  
+]
