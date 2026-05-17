@@ -27,11 +27,11 @@ module.exports = defineConfig({
     },
   },
   DB:{
-    user:"postgres",//database user
-    host:"localhost",//host
-    database:"saas",//database name
-    password:"1234",//database password
-    port:"5432"//port number
+    user:process.env.USER,//database user
+    host:process.env.HOST,//host
+    database:process.env.DB_NAME,//database name
+    password:process.env.DB_PASS,//database password
+    port:process.env.PORT//port number
 }
 ,
   component: {
